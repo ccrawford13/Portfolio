@@ -41,6 +41,9 @@ p.center {
         display:block;
         text-align: center;
         margin:0 auto 1%;
+        -webkit-box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
+        box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
       }
     }
     .project-description {
