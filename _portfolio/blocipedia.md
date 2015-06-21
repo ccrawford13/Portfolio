@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Blocipedia
-thumbnail-path: "/img/blocmarks_topics_thumb.png"
+thumbnail-path: "/img/blocipedia_new_thumb.png"
 short-description: SaaS app that allows users to create, share & collaborate on wikis.
 
 ---
 
 {:.center}
-![]({{ collections.permalink }}/img/blocipedia.png)
+![]({{ collections.permalink }}/img/blocipedia_profile.png)
 
 ## Overview
 
-This was the first project I created after completing the "Foundation" phase of Bloc's "Rails Web Development Track". This is a Wiki application, in which users can browse, create, and edit public Wikis. Users are able to upgrade to a Premium account if they would like the opportunity to create private Wikis, and invite others to collaborate on wikis.
+Blocipedia was the first project I created after completing the "Foundation" phase of Bloc's "Rails Web Development Track". This is a Wiki application, in which users can browse, create, and edit public Wikis. Users are able to upgrade to a Premium account if they would like the opportunity to create private Wikis, and invite others to collaborate on wikis.
 
 ## Personal Learning Objectives
 
@@ -24,11 +24,13 @@ My main focus for this app was to continue to improve my understanding of routes
 * As a User with a standard account, I want to be able to Create, Read, Update, and Destroy Public Wikis.
 * As a User, I want a User Profile to display and edit my Wikis.
 * As a Developer, I want to offer three user roles: Admin, Standard, or Premium.
-* As a Developer, I want to seed the development database automatically with users and wikis.
+* As a Developer, I want to seed the development database with users and wikis.
 * As a User, I want to upgrade my account from a free to paid plan.
 * As a Premium User, I want to create private wikis.
 * As a User, I want to create wikis using Markdown syntax.
 * As a Premium User, I want to add and remove collaborators from my private wikis.
+
+##### Extra Credit
 * As a Developer, I want to generate views using HAML, instead of ERB.
 
 ## Conclusion
