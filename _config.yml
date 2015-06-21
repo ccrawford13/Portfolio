@@ -30,7 +30,7 @@ theme:
   pinterest:
   reddit:
   soundcloud:
-  stack_exchange: "https://careers.stackoverflow.com/chadacrawford"
+  stack_exchange:
   steam:
   tumblr:
   twitter: "chadac13"
@@ -38,7 +38,7 @@ theme:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: "UA-64325267-1"
   disqus_shortname:
   katex: true # Enable if using math markup
 
