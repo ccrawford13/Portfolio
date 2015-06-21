@@ -29,7 +29,6 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
-    console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
     if(currentScroll > headerOrgOffset) {
       if (currentScroll > previousScroll) {
         $('.site-nav').fadeOut();
@@ -43,6 +42,7 @@ $(document).ready(function() {
     previousScroll = currentScroll;
   });
 
+// Smooth scroll down effects
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault();
     var target = this.hash;
