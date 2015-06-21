@@ -22,10 +22,29 @@ Array.prototype.forEach.call(elements, function(element) {
 });
 
 // jQuery
-$(document).ready(function(){
+$(document).ready(function() {
+// Fade Header in on scroll-up, out on scroll down
+  var previousScroll = 0,
+    headerOrgOffset = $('.site-nav').offset().top;
+
+  $(window).scroll(function() {
+    var currentScroll = $(this).scrollTop();
+    console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
+    if(currentScroll > headerOrgOffset) {
+      if (currentScroll > previousScroll) {
+        $('.site-nav').fadeOut();
+      } else {
+        $('.site-nav').fadeIn();
+        $('.site-nav').addClass('scrolled');
+      }
+    } else {
+      $('.site-nav').removeClass('scrolled');
+    }
+    previousScroll = currentScroll;
+  });
+
   $('a[href^="#"]').on('click',function (e) {
     e.preventDefault();
-
     var target = this.hash;
     var $target = $(target);
 

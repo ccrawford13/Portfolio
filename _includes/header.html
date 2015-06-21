@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" id="home">
 	{% include navigation.html %}
 	{% if site.theme.header_text %}
 	  <div {% if page.url == "/" %} class="call-out call-out-index" {% else %} class="call-out" {% endif %}
@@ -17,7 +17,7 @@
 			</ul>
 			{% if page.url == "/" %}
 				<div class="arrow-container">
-					<a href="#posts" id="down-arrow">
+					<a href="#about" id="down-arrow">
 						<i class="fa fa-fw fa-angle-double-down"></i>
 					</a>
 				</div>
