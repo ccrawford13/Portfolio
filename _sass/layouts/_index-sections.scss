@@ -1,0 +1,26 @@
+section {
+  @extend %padding-small;
+  .section-divider {
+    width: 85%;
+    height: 2px;
+    background-color: $border-color;
+    display: block;
+    margin: .75em auto;
+  }
+  .section-container {
+    padding-top: 1em;
+    text-align: center;
+  }
+  .button {
+    color: $link-color;
+  }
+  // Portfolio Section
+  .project {
+    width:100%;
+    .image-container {
+      margin: 0 .75em;
+      max-width: 25.3333%;
+      display: inline-block;
+    }
+  }
+}
