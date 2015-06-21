@@ -1,0 +1,44 @@
+section {
+  @extend %padding-small;
+  .section-divider {
+    margin: 0 10%;
+    height: 2px;
+    background-color: $border-color;
+    display: block;
+    margin: .75em auto;
+  }
+  .section-container {
+    margin: 0 5%;
+    padding-top: 1em;
+    text-align: center;
+  }
+  .button {
+    color: $link-color;
+  }
+  // About Section
+  .text-container {
+    text-align: center;
+    margin: 0 10%;
+    padding: .5em 1em;
+    p {
+      font-size: 1.25em;
+    }
+  }
+  // Portfolio Section
+  .project {
+    width:100%;
+    .image-container {
+      margin: 0 .75em;
+      max-width: 25.3333%;
+      display: inline-block;
+      .img {
+        -webkit-box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
+        box-shadow: 13px 7px 35px -9px rgba(0,0,0,0.75);
+      }
+      .img-title {
+        margin-top: 1em;
+      }
+    }
+  }
+}
