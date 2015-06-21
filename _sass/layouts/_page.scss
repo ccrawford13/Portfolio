@@ -1,3 +1,6 @@
+article {
+  padding: 0 15%;
+}
 // About Page
 .sub-header {
   padding-top: 1em;
@@ -7,9 +10,9 @@
 p.center {
   img {
     border: 1pt solid $border-color;
-    -moz-box-shadow: 1px 1px 5px #999;
-    -webkit-box-shadow: 1px 1px 5px #999;
-    box-shadow: 1px 1px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    -webkit-box-shadow: 2px 2px 5px #999;
+    box-shadow: 2px 2px 5px #999;
   }
 }
 // Work listing

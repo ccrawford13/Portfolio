@@ -1,6 +1,7 @@
 .site-header {
-  @extend %padding-small;
-  padding-bottom: 0;
+  // @extend %padding-small;
+  padding: .75em 1em;
+  // padding-bottom: 0;
   background: $brand-color;
   border-top:11px solid $header-desc-background-color;
   display: inline-block;
@@ -43,13 +44,17 @@
       }
     }
     &.scrolled {
-      @extend %padding-small;
+      padding: .75em 1em;
+      background-color: $header-desc-background-color;
       position: fixed;
       width: 100%;
       top: 0;
       right: 0;
       .nav_item {
         margin-top: .5em;
+      }
+      a {
+        color: $text-color;
       }
     }
   }

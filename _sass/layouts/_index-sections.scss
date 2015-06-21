@@ -1,18 +1,28 @@
 section {
   @extend %padding-small;
   .section-divider {
-    width: 85%;
+    margin: 0 10%;
     height: 2px;
     background-color: $border-color;
     display: block;
     margin: .75em auto;
   }
   .section-container {
+    margin: 0 5%;
     padding-top: 1em;
     text-align: center;
   }
   .button {
     color: $link-color;
+  }
+  // About Section
+  .text-container {
+    text-align: center;
+    margin: 0 10%;
+    padding: .5em 1em;
+    p {
+      font-size: 1.25em;
+    }
   }
   // Portfolio Section
   .project {
@@ -21,6 +31,12 @@ section {
       margin: 0 .75em;
       max-width: 25.3333%;
       display: inline-block;
+      .img {
+        border: 1pt solid $border-color;
+        -moz-box-shadow: 2px 2px 5px #999;
+        -webkit-box-shadow: 2px 2px 5px #999;
+        box-shadow: 2px 2px 5px #999;
+      }
     }
   }
 }
