@@ -23,24 +23,32 @@ Array.prototype.forEach.call(elements, function(element) {
 
 // jQuery
 $(document).ready(function() {
+  var pageWidth = $( window ).width();
+  $(window).resize(function(){
+    pageWidth = $( window ).width();
+  });
 // Fade Header in on scroll-up, out on scroll down
   var previousScroll = 0,
     headerOrgOffset = $('.site-nav').offset().top;
 
   $(window).scroll(function() {
     var currentScroll = $(this).scrollTop();
-    if(currentScroll > headerOrgOffset) {
-      if (currentScroll > previousScroll) {
-        $('.site-nav').fadeOut();
+    if(pageWidth > 569) {
+      if(currentScroll > headerOrgOffset) {
+        if (currentScroll > previousScroll) {
+          $('.site-nav').fadeOut();
+        } else {
+          $('.site-nav').fadeIn();
+          $('.site-nav').addClass('scrolled');
+        }
       } else {
-        $('.site-nav').fadeIn();
-        $('.site-nav').addClass('scrolled');
+        $('.site-nav').removeClass('scrolled');
       }
+      previousScroll = currentScroll;
     } else {
-      $('.site-nav').removeClass('scrolled');
+      $('.site-nav').addClass('scrolled');
     }
-    previousScroll = currentScroll;
-  });
+    });
 
 // Smooth scroll down effects
   $('a[href^="#"]').on('click',function (e) {

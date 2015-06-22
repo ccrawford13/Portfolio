@@ -11,6 +11,9 @@ section {
     margin: 0 5%;
     padding-top: 1em;
     text-align: center;
+    @include mobile {
+      padding-top: 65px;
+    }
   }
   .button {
     color: $link-color;

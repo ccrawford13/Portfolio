@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BlocMarks
+title: Blocmarks
 thumbnail-path: "/img/blocmarks_topics_thumb.png"
 short-description: Social Bookmarking Application
 ---
